@@ -10,7 +10,9 @@
       --text: #1f2933;
       --muted: #5f6c7b;
       --line: #e5e7eb;
-      --link: #165dff;
+      --link: #5b21b6;
+      --purple: #7c3aed;
+      --purple-soft: #a78bfa;
       --max: 900px;
     }
 
@@ -34,7 +36,7 @@
     }
 
     h1 {
-      margin: 0 0 24px;
+      margin: 0 0 18px;
       font-size: clamp(2.4rem, 5vw, 3.7rem);
       line-height: 1.08;
       letter-spacing: -0.05em;
@@ -50,6 +52,14 @@
       vertical-align: baseline;
     }
 
+    .name-line {
+      width: 92px;
+      height: 4px;
+      margin: 0 0 30px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--purple), var(--purple-soft));
+    }
+
     section {
       margin-top: 44px;
     }
@@ -60,6 +70,17 @@
       border-bottom: 1px solid var(--line);
       font-size: 1.45rem;
       letter-spacing: -0.02em;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 0.95em;
+      margin-right: 10px;
+      border-radius: 999px;
+      background: var(--purple);
+      vertical-align: -0.12em;
     }
 
     h3 {
@@ -145,6 +166,7 @@
   <main>
     <header>
       <h1>Zixiong Wang <span class="cn-name">王子雄</span></h1>
+      <div class="name-line" aria-hidden="true"></div>
     </header>
 
     <section class="intro" id="about">
