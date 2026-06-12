@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal academic homepage of Zixiong Wang. Research in artificial intelligence, deep learning, generalization, foundation models, representation learning, and next-generation deep learning." />
+  <title>Zixiong Wang | AI and Deep Learning Researcher</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6c7b;
+      --line: #d8dee6;
+      --accent: #165dff;
+      --accent-dark: #0f46c7;
+      --soft: #eef4ff;
+      --max: 980px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top left, #eaf1ff 0, #f4f6f8 38%, #f7f7f7 100%);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 44px 22px 72px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 38px;
+      box-shadow: 0 18px 48px rgba(31, 41, 51, 0.08);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--accent-dark);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .cn-name {
+      font-size: 1.35rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0;
+      margin-left: 8px;
+    }
+
+    .title-line {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .intro {
+      margin-top: 28px;
+      max-width: 840px;
+      font-size: 1.05rem;
+    }
+
+    .intro p {
+      margin: 0 0 16px;
+    }
+
+    .section {
+      margin-top: 32px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(31, 41, 51, 0.055);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 1.55rem;
+      letter-spacing: -0.02em;
+    }
+
+    .paper {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+    }
+
+    .paper h3 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.28;
+      letter-spacing: -0.02em;
+    }
+
+    .paper-subtitle {
+      margin: 8px 0 14px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .summary {
+      margin: 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 700;
+      border: 1px solid var(--accent);
+      min-height: 42px;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--accent);
+    }
+
+    .button.secondary:hover {
+      background: var(--soft);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .contact-item {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fbfcff;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        padding-top: 24px;
+      }
+
+      .hero,
+      .section {
+        padding: 24px;
+        border-radius: 18px;
+      }
+
+      .cn-name {
+        display: block;
+        margin-left: 0;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="eyebrow">Artificial Intelligence · Deep Learning · Generalization</span>
+      <h1>Zixiong Wang <span class="cn-name">王子雄</span></h1>
+      <p class="title-line">Researcher in artificial intelligence and deep learning</p>
+
+      <div class="intro">
+        <p>
+          I am an artificial intelligence and deep learning researcher. My current work focuses on building a bottom-up understanding of deep learning and using that understanding to explore what may come after today’s dominant research directions, including large language models, self-supervised computer vision, and early-stage world models. I currently describe this broader direction as next-generation deep learning.
+        </p>
+        <p>
+          My research is also concerned with intelligence beyond deep learning itself: what intelligence is, how it can be understood, and what kind of systems may be needed to realize more general forms of intelligence. I try to build research from first principles, develop a coherent research framework from fundamental understanding, and then use that framework to guide concrete research directions.
+        </p>
+        <p>
+          I aim to work on frontier problems with as little inherited bias as possible, while keeping the research grounded, concrete, and intellectually honest.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="papers">
+      <h2>Papers</h2>
+
+      <article class="paper">
+        <h3>Deep Learning as Generalization Machinery</h3>
+        <p class="paper-subtitle">
+          From Task-Specific Mappings to Reusable Representations and Predictive Relational Structure
+        </p>
+        <p class="meta">
+          Position Paper / Preprint · Version 1.0 · Zenodo · 2026
+        </p>
+        <p class="summary">
+          This paper argues that major transitions in deep learning are transitions in what models learn to generalize: from task-specific mappings, to reusable representations, to predictive relational structure. It uses this framework to reinterpret the historical shift from supervised deep learning to BERT-style representation learning and GPT-style predictive interaction.
+        </p>
+        <div class="buttons">
+          <a class="button" href="https://zenodo.org/records/20647704" target="_blank" rel="noopener noreferrer">Zenodo Record</a>
+          <a class="button secondary" href="https://zenodo.org/records/20647704/files/Three_Levels_of_Generalization_in_Deep_Learning_v1.0_2026-06-12.pdf?download=1" target="_blank" rel="noopener noreferrer">PDF</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <strong>Academic email</strong><br />
+          <a href="mailto:wangzixiong@usx.edu.cn">wangzixiong@usx.edu.cn</a>
+        </div>
+        <div class="contact-item">
+          <strong>Personal email</strong><br />
+          <a href="mailto:teddywang0405@gmail.com">teddywang0405@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>GitHub</strong><br />
+          <a href="https://github.com/zixiong-teddy-wang" target="_blank" rel="noopener noreferrer">github.com/zixiong-teddy-wang</a>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">© 2026 Zixiong Wang. This site is a minimal academic homepage, version 1.</p>
+  </main>
+</body>
+</html>
